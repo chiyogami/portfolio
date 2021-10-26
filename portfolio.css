@@ -1,0 +1,868 @@
+/*パソコン版*/
+body {
+  margin: 0;
+  background-color: #F3D3B1;
+}
+#background {
+  width: 100vw;
+  height: 100vh;
+}
+
+/*コンテナ*/
+#container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: /*1~2*/5fr /*2~3*/3.5fr /*3~4*/2.5fr;
+  grid-template-rows: /*1~2*/3fr /*2~3*/1fr /*3~4*/3fr /*4~5*/2fr /*5~6*/2fr;
+  position: absolute;
+  width: 1100px;
+  height: 600px;
+  margin: auto;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff4e2;
+}
+.container-background {
+  background-color: snow;
+}
+
+.box-big1/*b*/ {
+  grid-column: 2 / 3;
+  grid-row: 1 / 6;
+}
+.box-big2/*c*/ {
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+}
+.box-big3/*d*/ {
+  grid-column: 1 / 2;
+  grid-row: 2 / 5;
+}
+.box-big4/*e*/ {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+.box-big5/*f*/ {
+  grid-column: 3 / 4;
+  grid-row: 4 / 6;
+}
+.box-big6/*g*/ {
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
+}
+
+#portfolio/*a*/ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px #da7b6b solid;
+}
+#works1/*b*/ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'DotGothic16', sans-serif;
+}
+#c {
+  display: flex;
+  background-color: #eeaa91;
+  border: 3px #e0464d solid;
+}
+#d {
+  display: flex;
+  flex-direction: column;
+  border: 3px #8cbab8 solid;
+  font-family: 'DotGothic16', sans-serif;
+}
+#works2/*e*/ {
+  display: flex;
+  background-color: #aec2ba;
+  border: 3px #637571 solid;
+}
+#f {
+  display: flex;
+  background-color: #6d3e56;
+  border: 3px #23171b solid;
+}
+#g {
+  display: flex;
+  align-items: center;
+  border: 3px #cb305c solid;
+  background-color: #fde8bf;
+}
+#hij {
+  display: none;
+  border: 3px #9d899d solid;
+}
+#profile/*k*/ {
+  display: none;
+  border: 3px #8cbab8 solid;
+}
+
+.pointer-events {
+  pointer-events: none;
+}
+
+/*a*/
+.portfolio {
+  height: 80px;
+}
+
+/*b スマホ*/
+.smartphone {
+  position: absolute;
+  height: 597.97px;
+}
+#scroll {
+  position: absolute;
+  overflow: scroll;
+  height: 420px;
+  width: 300px;
+  background-color: #fff4e2;
+}
+#top {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  margin: 0 0 10px;
+}
+.box {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  background-color: #929063;
+}
+/*うさぎ*/
+.usagi {
+  width: 180px;
+  margin: auto auto 0 auto ;
+}
+#top p {
+  margin: auto;
+  color: #fff;
+}
+label {
+  cursor: pointer;
+}
+.img-box {
+  width: 100%;
+  height: 170px;
+  margin: 0 0 10px;
+  background-color: #fff;/*cadetblue*/
+  border: 3px #6d3e56 solid;
+  border-width: 1px 0;
+}
+.img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+.img:hover {
+  opacity: 0.7;
+}
+.input {
+  display: none;
+}
+.hidden {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.hidden-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 200px;
+  margin: 0 0 20px;
+  background-color: #fbd8b5;
+}
+.p {
+  margin: 0 5px 0;
+  font-weight: bold;
+  color: #6b5745;
+}
+.p-top {
+  margin: 5px auto;
+  font-weight: bold;
+  color: #46292c;
+}
+.p-bottom {
+  margin: 10px auto 5px;
+  font-weight: bold;
+}
+.input:checked ~ .hidden {
+  padding: 0 10px 20px;
+  height: auto;
+  opacity: 1;
+}
+/*ペンギン*/
+.pengin {
+  width: 180px;
+  margin: auto auto 0 auto ;
+}
+/*白いworks*/
+.works1 {
+  position: absolute;
+  height: 50px;
+  top: 30px;
+}
+/*矢印*/
+.yajirushi {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 530px;
+}
+.yajirushi img {
+  width: 70px;
+}
+
+/*c*/
+/*二匹のうさぎ*/
+.two-usagi {
+  width: 200px;
+  margin: auto;
+}
+/*丸いペンギン*/
+.r-pengin {
+  display: none;
+}
+/*子ペンギン*/
+.pen {
+  display: none;
+}
+
+/*d*/
+.profile1 {
+  height: 70px;
+  margin: 10px auto 10px;
+  left: 0;
+  right: 0;
+}
+.self-introduction {
+  margin: auto;
+  text-align: center;
+}
+.self-introduction p {
+  margin: 0 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #6b5745;
+}
+
+/*e 画像*/
+/*ネコ*/
+.cat1-1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cat1-2 {
+  display: none;
+}
+/*works*/
+.works2 {
+  display: none;
+}
+
+/*f*/
+/*ネコ*/
+.cat2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.works-top {
+  display: none;
+}
+
+/*g ボタン*/ 
+button {
+  margin: auto;
+  padding: 0;
+  background-color: transparent;
+  border: transparent;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  margin: auto;
+}
+.button img {
+  height: 80px;
+}
+.button-top {
+  position: absolute;
+  cursor: pointer;
+}
+.button-top:active{
+  bottom: 15px;
+}
+
+/*k profile*/
+.profile2 {
+  display: none;
+}
+
+#arm {
+  position: fixed;
+  width: 100px;
+  top: 0;
+}
+
+/*タブレット版*/
+@media screen and (max-width: 1150px) {
+body {
+  margin: 0;
+  padding: 50px 0;
+}
+#background {
+  height: 1520px;
+}
+
+/*コンテナ*/
+#container {
+  grid-template-columns: /*1~2*/2.3fr /*2~3*/3.7fr;
+  grid-template-rows: /*1~2*/1fr /*2~3*/1fr /*3~4*/0.75fr /*4~5*/1fr /*5~6*/1.5fr /*6~7*/0.9fr /*7~8*/2fr /*8~9*/1.1fr ;
+  width: 700px;
+  height: 1500px;
+  top: auto;
+  bottom: auto;
+}
+.box-big0/*a*/ {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
+.box-big1/*b*/ {
+  grid-column: 2 / 3;
+  grid-row: 2 / 6;
+}
+.box-big2/*c*/ {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+.box-big3/*d*/ {
+  grid-column: 1 / 3;
+  grid-row: 7 / 8;
+}
+.box-big4/*e*/ {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+.box-big5/*f*/ {
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
+}
+.box-big6/*g*/ {
+  grid-column: 1 / 3;
+  grid-row: 8 / 9;
+}
+.box-big7/*hij*/ {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+.box-big10/*k*/ {
+  grid-column: 1 / 3;
+  grid-row: 6 / 7;
+}
+#c {
+  background-color: #e3cc87;
+  border: 3px #bb9855 solid;
+}
+#hij {
+  display: flex;
+}
+#profile {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*a*/
+.portfolio {
+  height: 100px;
+}
+
+/*b スマホ*/
+.smartphone {
+  height: 670px;
+}
+#scroll {
+  height: 480px;
+  width: 340px;
+}
+/*白いworks*/
+.works1 {
+  position: absolute;
+  height: 60px;
+  top: 200px;
+}
+/*矢印*/
+.yajirushi {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 768px;
+}
+.yajirushi img {
+  width: 70px;
+}
+
+/*c*/
+/*二匹のうさぎ*/
+.two-usagi {
+  display: none;
+}
+/*丸いペンギン*/
+.r-pengin {
+  display: block;
+  width: 190px;
+  margin: auto;
+}
+
+/*d*/
+.profile1 {
+  display: none;
+}
+.self-introduction p {
+  margin: 0 30px;
+  font-size: x-large;
+}
+
+/*e 画像*/
+/*ネコ*/
+.cat1-1 {
+  display: none;
+}
+.cat1-2 {
+  display: block;
+  height: 150px;
+  margin: auto auto 0 auto;
+}
+
+/*g ボタン*/ 
+.button {
+  height: 150px;
+}
+.button img {
+  height: 150px;
+}
+.button-top:active{
+  bottom: 14px;
+}
+
+/*fhij*/
+.link {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+#i-e {
+  display: none;
+}
+.animate-link {
+  margin: 10px;
+  color: #6b5745;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 24px;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: left bottom; /* 線の起点を左・下に設定 */
+  background-size: 0 10px; /* 線の横幅を0、縦幅を1pxに */
+  transition: background-size 0.6s; /* 線を伸ばすアニメーション実行時間を指定 */
+}
+.animate-link:hover {
+  background-size: 100% 10px; /* 線の横幅を100%にする */
+}
+/*https://web-dev.tech/front-end/css/anchor-tag-underline-animation/*/
+.color1 {
+  background-image: linear-gradient(90deg, #ff9999, #ff9999); /* 線の色 */
+}
+.color2 {
+  background-image: linear-gradient(90deg, #ffdb99, #ffdb99); /* 線の色 */
+}
+.color3 {
+  background-image: linear-gradient(90deg, #99ffe9, #99ffe9); /* 線の色 */
+}
+/*k profile*/
+.profile2 {
+  display: block;
+  height: 100px;
+}
+
+#arm {
+  width: 150px;
+}
+}
+
+@media screen and (max-width: 750px) {
+#background {
+  height: 1120px;
+}
+
+/*コンテナ*/
+#container {
+  width: 500px;
+  height: 1100px;
+}
+
+/*a*/
+.portfolio {
+  height: 70px;
+}
+
+/*b スマホ*/
+.smartphone {
+  height: 495px;
+}
+#scroll {
+  height: 350px;
+  width: 250px;
+}
+.box {
+  height: 65px;
+}
+.hidden-box {
+  height: 250px;
+}
+/*うさぎ*/
+#usagi {
+  width: 150px;
+  margin: auto auto 0 auto ;
+}
+/*ペンギン*/
+.pengin {
+  width: 150px;
+  margin: auto auto 0 auto ;
+}
+/*白いworks*/
+.works1 {
+  position: absolute;
+  height: 40px;
+  top: 150px;
+}
+/*矢印*/
+.yajirushi {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 565px;
+}
+.yajirushi img {
+  width: 60px;
+}
+
+/*c*/
+/*丸いペンギン*/
+.r-pengin {
+  width: 130px;
+}
+
+/*d*/
+.self-introduction p {
+  margin: 0 20px;
+  font-size: 17px;
+}
+
+/*e 画像*/
+/*ネコ*/
+.cat1-2 {
+  height: 110px;
+  margin: auto;
+}
+
+/*g ボタン*/ 
+.button {
+  height: 100px;
+}
+.button img {
+  height: 100px;
+}
+.button-top:active{
+  bottom: 17px;
+}
+
+/*fhij*/
+.animate-link {
+  margin: 10px;
+  font-size: 14px;
+  background-size: 0 5px; /* 線の横幅を0、縦幅を1pxに */
+}
+.animate-link:hover {
+  background-size: 100% 5px; /* 線の横幅を100%にする */
+}
+
+/*k profile*/
+.profile2 {
+  height: 70px;
+}
+
+#arm {
+  width: 120px;
+}
+}
+
+/*スマホ版*/
+@media screen and (max-width: 550px) {
+#background {
+  height: 1420px;
+}
+
+/*コンテナ*/
+#container {
+  grid-template-columns: /*1~2*/1fr /*2~3*/1fr /*3~4*/1fr /*4~5*/1fr;
+  grid-template-rows: /*1~2*/0.7fr /*2~3*/1fr /*3~4*/0.8fr /*4~5*/4fr /*5~6*/0.5fr /*6~7*/0.8fr /*7~8*/2.5fr /*8~9*/0.9fr;
+  width: 300px;
+  height: 1400px;
+}
+.box-big0/*a*/ {
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+}
+.box-big1/*b*/ {
+  grid-column: 1 / 5;
+  grid-row: 4 / 5;
+}
+.box-big2/*c*/ {
+  grid-column: 3 / 5;
+  grid-row: 2 / 3;
+}
+.box-big3/*d*/ {
+  grid-column: 1 / 5;
+  grid-row: 7 / 8;
+}
+.box-big4/*e*/ {
+  grid-column: 1 / 5;
+  grid-row: 3 / 4;
+}
+.box-big5/*f*/ {
+  grid-column: 2 / 4;
+  grid-row: 5 / 6;
+}
+.box-big6/*g*/ {
+  grid-column: 1 / 5;
+  grid-row: 8 / 9;
+}
+.box-big7/*hij*/ {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+.box-big10/*k*/ {
+  grid-column: 1 / 5;
+  grid-row: 6 / 7;
+}
+#works1/*b*/ {
+  border: 3px #6b5745 solid;
+}
+#c {
+  background-color: #ffefbc;
+  border: 3px #e9ca3d solid;
+}
+#works2/*e*/ {
+  justify-content: center;
+  align-items: center;
+  background-color: snow;
+  border: 3px #6b5745 solid;
+}
+#f {
+  justify-content: center;
+  align-items: center;
+  background-color: snow;
+  border: 3px #6b5745 solid;
+}
+
+/*a*/
+.portfolio {
+  height: 45px;
+}
+
+/*b スマホ*/
+.smartphone {
+  display: none;
+}
+#scroll {
+  position: static;
+  height: 485.19px;
+  width: 100%;
+}
+.box {
+  height: 80px;
+}
+.hidden-box {
+  height: 200px;
+}
+/*うさぎ*/
+#usagi {
+  width: 180px;
+  margin: auto auto 0 auto ;
+}
+/*ペンギン*/
+.pengin {
+  width: 180px;
+  margin: auto auto 0 auto ;
+}
+/*白いworks*/
+.works1 {
+  display: none;
+}
+/*矢印*/
+.yajirushi {
+  display: none;
+}
+
+/*c*/
+/*丸いペンギン*/
+.r-pengin {
+  display: none;
+}
+/*子ペンギン*/
+.pen {
+  display: block;
+  width: 100px;
+  margin: auto;
+}
+
+/*d*/
+.self-introduction p {
+  margin: 0 15px;
+}
+
+/*e 画像*/
+/*ネコ*/
+.cat1-2 {
+  display: none;
+}
+/*works*/
+.works2 {
+  display: block;
+  height: 50px;
+}
+
+/*f*/
+/*ネコ*/
+.cat2 {
+  display: none;
+}
+.works-top {
+  display: block;
+  background-image: linear-gradient(90deg, #cda6bf, #cda6bf); /* 線の色 */
+}
+
+/*g ボタン*/ 
+.button {
+  height: 90px;
+}
+.button img {
+  height: 90px;
+}
+.button-top:active{
+  bottom: 13px;
+}
+
+/*hij*/
+#i-b {
+  display: none;
+}
+#i-e {
+  display: block;
+}
+.animate-link {
+  margin: 5px;
+}
+
+/*k profile*/
+.profile2 {
+  height: 50px;
+}
+
+#arm {
+  width: 100px;
+}
+}
+
+@media screen and (max-width: 350px) {
+#background {
+  height: 1250px;
+}
+
+/*コンテナ*/
+#container {
+  width: 250px;
+  height: 1230px;
+}
+
+/*a*/
+.portfolio {
+  height: 40px;
+}
+
+/*b スマホ*/
+#scroll {
+  height: 414.28px;
+}
+.box {
+  height: 65px;
+}
+.hidden-box {
+  height: 250px;
+}
+/*うさぎ*/
+#usagi {
+  width: 150px;
+  margin: auto auto 0 auto ;
+}
+/*ペンギン*/
+.pengin {
+  width: 150px;
+  margin: auto auto 0 auto ;
+}
+
+/*c*/
+/*子ペンギン*/
+.pen {
+  width: 85px;
+}
+
+/*d*/
+.self-introduction p {
+  margin: 0 10px;
+  font-size: medium;
+}
+
+/*e 画像*/
+.works2 {
+  display: block;
+  height: 45px;
+}
+
+/*g ボタン*/ 
+.button {
+  height: 70px;
+}
+.button img {
+  height: 70px;
+}
+.button-top:active{
+  bottom: 17px;
+}
+
+/*hij*/
+.animate-link {
+  margin: 5px;
+  font-size: 11px;
+}
+
+/*k profile*/
+.profile2 {
+  height: 45px;
+}
+}
